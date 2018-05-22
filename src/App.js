@@ -3,8 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 
 class Text extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      color: props.color,
+      value: props.value,
+    };
+  }
   render() {
-    <h1>Hello, <Text color="green" value="Kenzie" /></h1>
+    return (
+      <span style={{color: this.props.color}}>{this.props.value}</span>
+    )
   }
 }
 
@@ -19,6 +28,9 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+
+        <h1>Hi, I'm <Text color="blue" value="Morgan" /></h1>
+        
       </div>
     );
   }
