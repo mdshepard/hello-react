@@ -29,7 +29,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
 
-        <h1>Hi, I'm <Text color="blue" value="Morgan" /></h1>
+        <h1>Hi, I'm <Text color="blue" value="Morgan"/></h1>
         
       </div>
     );
